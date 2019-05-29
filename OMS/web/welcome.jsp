@@ -25,11 +25,15 @@
         <p>Your DOB: <%=dob%></p>
         <p>Your password is: <%=password%></p>
         <p>Your ID is: <%=ID%></p>
+         
         <%    
             DBManager manager = (DBManager) session.getAttribute("manager");
             User user = new User(ID,name,email,password,dob);
             manager.Register(ID, email, name, password, dob);
             session.setAttribute("user",user);
         %>
+           <button class="button" type="button" onclick="location.href = 'main.jsp'" > Main Page </button>
+         <button class="button" type="button" onclick="location.href = 'registerDelete.jsp'" > cancel</button>
+         <button class="button" type="button" onclick="location.href = 'registerUpdate.jsp'" > update information </button>
     </body>
 </html>
