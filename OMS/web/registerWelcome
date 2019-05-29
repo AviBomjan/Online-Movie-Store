@@ -10,7 +10,7 @@
         <title>Welcome Page</title>
     </head>
      <%
-        User user =(User)session.getAttribute("student");
+        User user =(User)session.getAttribute("user");
         %>
      <body onload="startTime()">
         <div><span class="time" id="time" ></span></div>
