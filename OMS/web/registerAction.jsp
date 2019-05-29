@@ -40,9 +40,9 @@
             } else {
                 
             DBManager manager = (DBManager) session.getAttribute("manager");
-            User student = new User(ID,email,name,password,phone,dob);
+            User user = new User(ID,email,name,password,phone,dob);
             manager.Register(ID, email, name, password,phone, dob);
-            session.setAttribute("student",student);
+            session.setAttribute("user",user);
             response.sendRedirect("registerwelcome.jsp"); }
         }else{
             response.sendRedirect("index.jsp"); 
