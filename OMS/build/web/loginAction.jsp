@@ -1,6 +1,7 @@
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="OMS.model.dao.*"%>
 <%@page import="OMS.controller.*"%>
+<%@page import="OMS.controller.Validator"%>
 <%@page import="java.util.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="OMS.model.*" import="java.sql.*"%>
@@ -32,8 +33,7 @@
                 session.setAttribute("passErr", "Password format is incorrect");  
                 response.sendRedirect("login.jsp");                
             }
-            
-            if (user != null) {
+            else if (user != null) {
                 session.setAttribute("userLogin", user);
                 session.setAttribute("log",log);
                 response.sendRedirect("loginWelcome.jsp");                

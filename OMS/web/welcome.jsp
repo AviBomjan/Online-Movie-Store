@@ -25,13 +25,11 @@
         <p>Your DOB: <%=dob%></p>
         <p>Your password is: <%=password%></p>
         <p>Your ID is: <%=ID%></p>
-         
         <%    
             DBManager manager = (DBManager) session.getAttribute("manager");
             User user = new User(ID,name,email,password,dob);
             manager.Register(ID, email, name, password, dob);
             session.setAttribute("user",user);
         %>
-           
     </body>
 </html>
