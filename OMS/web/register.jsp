@@ -11,11 +11,12 @@
         <div><span class="time" id="time" ></span></div>
         <h1>Enter your details to register:</h1> 
         <br>
-        <form action="welcome.jsp" method="post">
+        <form action="registerAction.jsp" method="post">
             <table>
                 <tr><td>Name:</td><td><input size="30" type="text" name="name"></td></tr>
                 <tr><td>Email:</td><td><input size="30" type="text" name="email"></td></tr>
                 <tr><td>Password:</td><td><input size="30" type="password" name="password"></td></tr>
+                 <tr><td>Phone:</td><td><input size="30" type="text" name="phone"></td></tr>
                 <tr><td>Date of Birth:</td><td><input size="30" name="dob"></td></tr>  
                  <tr><td>Agree to TOS</td><td><input type="checkbox" name="tos"></td></tr>
                 <tr><td></td>
