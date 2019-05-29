@@ -32,8 +32,6 @@
             manager.Register(ID, email, name, password, dob);
             session.setAttribute("user",user);
         %>
-           <button class="button" type="button" onclick="location.href = 'main.jsp'" > Main Page </button>
-         <button class="button" type="button" onclick="location.href = 'registerDelete.jsp'" > cancel</button>
-         <button class="button" type="button" onclick="location.href = 'registerUpdate.jsp'" > update information </button>
+           
     </body>
 </html>
