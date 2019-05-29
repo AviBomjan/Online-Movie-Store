@@ -43,7 +43,7 @@
             User student = new User(ID,email,name,password,phone,dob);
             manager.Register(ID, email, name, password,phone, dob);
             session.setAttribute("student",student);
-            response.sendRedirect("welcome.jsp"); }
+            response.sendRedirect("registerwelcome.jsp"); }
         }else{
             response.sendRedirect("index.jsp"); 
             
