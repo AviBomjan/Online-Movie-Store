@@ -29,7 +29,7 @@
             User user = new User(ID,email,name,password,phone,dob);
             manager.Register(ID, email, name, password,phone, dob);
             session.setAttribute("user",user);
-            response.sendRedirect("welcome.jsp"); 
+            response.sendRedirect("registerWelcome.jsp"); 
         }else{
             response.sendRedirect("index.jsp"); 
             
