@@ -1,0 +1,80 @@
+body{
+    background:url(IndexpageBack.jpg); 
+    background-repeat: no-repeat; 
+    background-size: 100% 100%; 
+    height:700px; 
+    background-attachment: fixed;
+    display: table-cell;
+    vertical-align: middle;
+    color:#fff;
+    font-size:20px;
+}
+h1{
+    color: firebrick;
+    font-weight: bold;
+}
+.time{    
+    color: #E67E22;
+    font-weight: bold;
+    font-size: 30px;
+    position:absolute;
+    top:0;
+    left: 0;
+}
+
+.error{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    color:red;
+    /*text-shadow: 1px 1px 1px black, 0 0 10px blue, 0 0 3px cyan; */
+}
+
+.outline{
+    color: #933680;
+    font-weight: bold;
+}
+
+.link{
+    color: #0066cc;
+    font-weight: bold;
+    font-size: 18px;
+}
+table.account{                
+    border-collapse: collapse;
+    border: 1px solid black;
+    background-color: #E67E22;
+}
+thead.h{
+    text-align: center;
+    font-weight: bold;
+}
+td.a{
+    border: 1px solid black;     
+    padding: 2px;
+    width:230px;
+}
+
+.button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 10px; 
+}
+
+
+html {
+    display: table;
+    margin: auto;
+}
+
+
+
